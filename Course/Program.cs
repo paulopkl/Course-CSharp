@@ -253,17 +253,17 @@ namespace Course {
 
             ////////////////// Constructor
 
-            string name = Console.ReadLine();
-            double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            int quantity = int.Parse(Console.ReadLine());
+            //string name = Console.ReadLine();
+            //double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //int quantity = int.Parse(Console.ReadLine());
 
-            Product p = new Product(name, price, quantity);
+            //Product p = new Product(name, price, quantity);
 
-            p.TotalStockValue();
+            //p.TotalStockValue();
 
-            p.Name = ";";
+            //p.Name = ";";
 
-            Console.WriteLine(p);
+            //Console.WriteLine(p);
 
             //////////////////
 
@@ -275,20 +275,154 @@ namespace Course {
             //};
 
             //cons.returnData();
+
+            //////////////////
+
+            //Console.Write("Enter the account number: ");
+            //int num = int.Parse(Console.ReadLine());
+            //Console.Write("Enter the account holder: ");
+            //string holder = Console.ReadLine();
+            //Console.Write("There will be initial deposit (s/n)?");
+            //char willBe = char.Parse(Console.ReadLine());
+
+            //AccountBank AB;
+
+            //if (willBe == 's' || willBe == 'S')
+            //{
+            //    Console.WriteLine("Enter The value of initial Deposit: ");
+            //    double initialDesposit = double.Parse(Console.ReadLine());
+            //    AB = new AccountBank(num, holder, initialDesposit);
+            //} else
+            //{
+            //    AB = new AccountBank(num, holder);
+            //}
+
+            //Console.WriteLine("Account Data: ");
+            //Console.Write(AB); // ToString();
+
+            //////////////
+
+            //Point p;
+            //Point p2;
+
+            //p.X = 10;
+            //p.Y = 20;
+            //Console.WriteLine(p);
+            //p = new Point();
+            //Console.WriteLine(p);
+            //p.X = 5;
+            //p.Y = 15;
+            //Console.WriteLine(p);
+            //p = new Point();
+            //Console.WriteLine(p);
+            //p.X = 91;
+            //p.Y = 89;
+            //p2 = p;
+            //Console.WriteLine(p2);
+
+            //////////////
+
+            //Nullable<double> x = null;
+            double? x = null;
+            double? y = 10.0;
+
+            //Console.WriteLine(x.GetValueOrDefault());
+            //Console.WriteLine(y.GetValueOrDefault());
+
+            //Console.WriteLine(x.HasValue);
+            //Console.WriteLine(y.HasValue);
+
+            //if (x.HasValue)
+            //    Console.WriteLine(x.Value);
+            //else
+            //    Console.WriteLine("x is null!");
+
+            //if (y.HasValue)
+            //    Console.WriteLine(y.Value);
+            //else
+            //    Console.WriteLine("y is null!");
+
+            //double a = x ?? 5.0;
+            //double b = y ?? 5.0;
+
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+
+            //////////////
+
+            //Vectors v = new Vectors(Console.ReadLine());
+
+            //int n = int.Parse(Console.ReadLine());
+
+            //Vectors2[] vect = new Vectors2[n];
+
+            //double averangePrice = 0.0;
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write("Write an Name: ");
+            //    string name = Console.ReadLine();
+
+            //    Console.Write("Write an Price: ");
+            //    double price = double.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("==============================");
+
+            //    //vect[i] = new Vectors2(name, price);
+            //    vect[i] = new Vectors2 { Name = name, Price = price };
+            //}
+
+            //foreach (var item in vect)
+            //{
+            //    averangePrice += item.Price;
+            //    Console.WriteLine($"The Name of the {item.Name} and the value is {item.Price}");
+            //}
+
+            //Console.WriteLine($"Averange price of products is {averangePrice}");
+
+            //////////////////////
+
+            //int s1 = Calculator.Sum(1, 5, 10, 15, 20, 25, 30, 17);
+
+            //Console.WriteLine(s1);
+
+            /////////////////////
+
+            //int a = 10;
+            //int tripleA;
+            ////Calculator.Triple(ref a);
+            //Calculator.TripleOut(a, out tripleA);
+            //Console.WriteLine(a);
+
+            //string[] vect = new string[] { "Maria", "Alex", "Bob" };
+
+            //ListTest listTest = new ListTest();
+
+            //ExercisesLists exercisesLists = new ExercisesLists();
+
+            //MatrizTest mat = new MatrizTest();
+
+            //SwitchCase switchCase = new SwitchCase();
+
+            //ConditionTernary conditionTernary = new ConditionTernary();
+
+            //StringsFunctions stringsFunctions = new StringsFunctions();
+
+            DateTimeTest dateTimeTest = new DateTimeTest();
         }
 
-        static double returnsNumbers(int a, int b, int c) {
-            double m;
-            if (a > b && a > c) {
-                m = a;
-            } else if (b > a && b > c) {
-                m = b;
-            } else {
-                m = c;
-            }
+        //static double returnsNumbers(int a, int b, int c) {
+        //    double m;
+        //    if (a > b && a > c) {
+        //        m = a;
+        //    } else if (b > a && b > c) {
+        //        m = b;
+        //    } else {
+        //        m = c;
+        //    }
 
-            return m;
-        }
+        //    return m;
+        //}
     }
 }
 
