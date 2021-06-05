@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using Course.Entities;
+using Course.Entities.Enums;
+using Course.CompositionTask;
+using Course.StringBuilderTask;
+using Course.Inherit;
 
 namespace Course {
     class Program {
@@ -408,7 +413,40 @@ namespace Course {
 
             //StringsFunctions stringsFunctions = new StringsFunctions();
 
-            DateTimeTest dateTimeTest = new DateTimeTest();
+            //DateTimeTest dateTimeTest = new DateTimeTest();
+
+            //TimeSpanTest timeSpanTest = new TimeSpanTest();
+
+            //DateTimeTest2 dateTimeTest2 = new DateTimeTest2();
+
+            //DateTimeTest3 dateTimeTest3 = new DateTimeTest3();
+
+            //DateTime_Iso8601 dateTime_Iso8601 = new DateTime_Iso8601();
+
+            //Order order = new Order()
+            //{
+            //    Id = 1080,
+            //    Moment = DateTime.Now,
+            //    status = OrderStatus.PendingPayment
+            //};
+
+            ////Console.WriteLine(order);
+
+            //string txt = OrderStatus.PendingPayment.ToString();
+
+            //Console.WriteLine(txt);
+
+            //OrderStatus os = Enum.Parse<OrderStatus>("delivered");
+            //OrderStatus os = (OrderStatus)Enum.Parse(typeof(OrderStatus), "delivered");
+            //Enum.TryParse("delivered", out os);
+
+            //Console.WriteLine(os);
+
+            //Composition composition = new Composition();
+
+            //Builder builder = new Builder();
+
+            InheritProgram inheritProgram = new InheritProgram();
         }
 
         //static double returnsNumbers(int a, int b, int c) {

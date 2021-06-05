@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Globalization
+using System.Globalization;
 
 namespace Course
 {
@@ -64,9 +64,15 @@ namespace Course
 
             Console.WriteLine("------------------------------");
 
-            //DateTime d10 = DateTime.Parse("15/08/2001", CultureInfo.InvariantCulture);
+            DateTime d10 = DateTime.ParseExact("2000-08-15", "yyyy-MM-dd", CultureInfo.InvariantCulture);
 
-            //Console.WriteLine(d10);
+            Console.WriteLine(d10);
+
+            Console.WriteLine("------------------------------");
+
+            DateTime d11 = DateTime.ParseExact("15/09/2001 13:05:58", "dd/MM/yyyy HH:mm:ss", new CultureInfo("pt-br", false));
+
+            Console.WriteLine(d11);
         }
     }
 }
