@@ -1,6 +1,7 @@
 ﻿namespace Course.Inherit.Entities
 {
-    class Account
+    abstract class Account
+    //class Account
     {
         public int Number { get; private set; }
         public string Holder { get; private set; }

@@ -6,6 +6,9 @@ using Course.Entities.Enums;
 using Course.CompositionTask;
 using Course.StringBuilderTask;
 using Course.Inherit;
+using Course.AbstractMethod;
+using Course.TryCatch;
+using Course.CreateException;
 
 namespace Course {
     class Program {
@@ -446,7 +449,15 @@ namespace Course {
 
             //Builder builder = new Builder();
 
-            InheritProgram inheritProgram = new InheritProgram();
+            //InheritProgram inheritProgram = new InheritProgram();
+
+            //InheritProgram2 inheritProgram2 = new InheritProgram2();
+
+            //AbstractMethodProgram abstractMethodProgram = new AbstractMethodProgram();
+
+            //TryCatchProgram tryCatchProgram = new TryCatchProgram();
+
+            CreateExceptionProgram createExceptionProgram = new CreateExceptionProgram();
         }
 
         //static double returnsNumbers(int a, int b, int c) {

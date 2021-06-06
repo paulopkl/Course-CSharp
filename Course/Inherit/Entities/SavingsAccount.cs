@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Course.Inherit.Entities
 {
+    //sealed class SavingsAccount : Account
     class SavingsAccount : Account
     {
         public double interestRate { get; set; }
@@ -21,6 +22,7 @@ namespace Course.Inherit.Entities
             this.Balance += this.Balance * interestRate;
         }
 
+        //public sealed override void Withdraw(double amount)
         public override void Withdraw(double amount)
         {
             base.Withdraw(amount);
