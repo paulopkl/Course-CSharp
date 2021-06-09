@@ -10,6 +10,11 @@ namespace Course
         public string Name { get; private set; }
         public double Salary { get; private set; }
 
+        public Employee()
+        {
+
+        }
+
         public Employee(int id, string name, double salary)
         {
             this.Id = id;

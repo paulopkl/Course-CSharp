@@ -9,6 +9,16 @@ using Course.Inherit;
 using Course.AbstractMethod;
 using Course.TryCatch;
 using Course.CreateException;
+using Course.FileManage;
+using Course.Interfaces;
+using Course.Comparable;
+using Course.PrintService;
+using Course.GetHashCodeAndEquals;
+using Course.HashAndSorted;
+using Course.CreateLog;
+using Course.SortedAndDictionary;
+using Course.ExtensionMethod;
+using Course.Comparison;
 
 namespace Course {
     class Program {
@@ -331,8 +341,8 @@ namespace Course {
             //////////////
 
             //Nullable<double> x = null;
-            double? x = null;
-            double? y = 10.0;
+            //double? x = null;
+            //double? y = 10.0;
 
             //Console.WriteLine(x.GetValueOrDefault());
             //Console.WriteLine(y.GetValueOrDefault());
@@ -388,13 +398,9 @@ namespace Course {
 
             //Console.WriteLine($"Averange price of products is {averangePrice}");
 
-            //////////////////////
-
             //int s1 = Calculator.Sum(1, 5, 10, 15, 20, 25, 30, 17);
 
             //Console.WriteLine(s1);
-
-            /////////////////////
 
             //int a = 10;
             //int tripleA;
@@ -445,19 +451,49 @@ namespace Course {
 
             //Console.WriteLine(os);
 
-            //Composition composition = new Composition();
+            //new Composition();
 
             //Builder builder = new Builder();
 
-            //InheritProgram inheritProgram = new InheritProgram();
+            //new InheritProgram();
 
-            //InheritProgram2 inheritProgram2 = new InheritProgram2();
+            //new InheritProgram2();
 
-            //AbstractMethodProgram abstractMethodProgram = new AbstractMethodProgram();
+            //new AbstractMethodProgram();
 
-            //TryCatchProgram tryCatchProgram = new TryCatchProgram();
+            //new TryCatchProgram();
 
-            CreateExceptionProgram createExceptionProgram = new CreateExceptionProgram();
+            //new CreateExceptionProgram();
+
+            //new FileManageProgram();
+
+            //new FileStreamProgram();
+
+            //new UsingProgram();
+
+            //new StreamWriterProgram();
+
+            //new DirectoryProgram();
+
+            //new PathProgram();
+
+            //new InterfacesProgram();
+
+            //new ComparableProgram();
+
+            //new PrintServiceProgram();
+
+            //new GetHashCodeAndEqualsProgram();
+
+            //new HashAndSortedProgram();
+
+            //new CreateLogProgram();
+
+            //new DictionaryProgram();
+
+            //new ExtensionMethodProgram();
+
+            new ComparisonProgram();
         }
 
         //static double returnsNumbers(int a, int b, int c) {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Course
 {
-    class Product
+    class ProductMain
     {
         private string _name;
         public double Price { get; private set; }
@@ -12,15 +12,15 @@ namespace Course
         //private int _quantity;
         //private double _price;
 
-        public Product() {  }
+        public ProductMain() {  }
 
-        public Product(string name, double price) : this()
+        public ProductMain(string name, double price) : this()
         {
             this._name = name;
             this.Price = price;
         }
 
-        public Product(string name, double price, int quantity) : this(name, price)
+        public ProductMain(string name, double price, int quantity) : this(name, price)
         {
             this.Quantity = quantity;
         }
